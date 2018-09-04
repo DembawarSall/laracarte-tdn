@@ -3,7 +3,7 @@
  // Titre des page
 if(! function_exists('page_title')) {
 	function page_title($title) {
-		$base_title = 'Laracarte - DWS';
+		$base_title = config('app.name').' - DWS';
 
 		if ($title === '') {
 			return $base_title;
